@@ -10,6 +10,14 @@ textarea {
     color: #222;
 }
 
+html { 
+    background: url(../img/bg_splash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
@@ -69,29 +77,6 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-/*.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}*/
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -108,15 +93,13 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: #464610;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #7d7d42;
 }
 
 nav a:hover {
@@ -154,13 +137,16 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Graham's custom styles
    ========================================================================== */
 
+.header-container {
+	border-bottom: 1px solid #e2e2da;
+}
 
-
-
-
+section#splash_message {
+	
+}
 
 
 
@@ -183,9 +169,9 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 27%;
+        width: 15%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 6px 2%;
         margin-bottom: 0;
     }
 
@@ -215,13 +201,9 @@ nav a:hover {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
+  
+  
+  
 
 /* ============
     WIDE: Menu
@@ -230,9 +212,15 @@ nav a:hover {
     .title {
         float: left;
     }
+    
+    .title img {
+    	max-width: 100%;
+    	height: auto;
+    }
 
     nav {
         float: right;
+        display: block;
         width: 38%;
     }
 
