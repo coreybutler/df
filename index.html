@@ -12,39 +12,44 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+       <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        <!--[if gte IE 9]>
+  			<style type="text/css">
+    			.gradient {
+       				filter: none;
+    			}
+  			</style>
+		<![endif]-->
+        
     </head>
+    
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-       <div class="header-container">
-            <header class="wrapper clearfix">
-            	<h1 class="title"><img src="img/logo.png" alt="Dread Fascination" /></h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-        	</header>	
-	    </div>
+		<div id="page">
+			
+			<header id="header_main" role="banner">
+				<h1 id="title">Dread Fascination</h1>
+				<h2 id="title_sub">A free-to-listen album by Graham Butler</h2>
+        	</header>
 	    
-        <div class="main-container">
-            <div class="main wrapper clearfix">
-
+            <div id="main" class="gradient">
+				
                 
 
             </div> <!-- #main -->
-        </div> <!-- #main-container -->
 
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>footer</h3>
-            </footer>
+        	<!--<div class="footer-container">
+            	<footer class="wrapper">
+                	<h3>footer</h3>
+            	</footer>
+        	</div>-->
+        
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
