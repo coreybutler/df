@@ -10,7 +10,7 @@ textarea {
     color: #222;
 }
 
-html { 
+html {
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -349,9 +349,9 @@ body > #page {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-  
-  
-  
+
+
+
 
 /* ============
     WIDE: Menu
@@ -360,7 +360,7 @@ body > #page {
     .title {
         float: left;
     }
-    
+
     .title img {
     	max-width: 100%;
     	height: auto;
@@ -396,9 +396,9 @@ body > #page {
 	#main {
 		width: 71%;
 	}
-	
+
     .wrapper {
-       
+
     }
 }
 
