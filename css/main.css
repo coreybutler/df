@@ -11,10 +11,10 @@ textarea {
 }
 
 html { 
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
@@ -157,8 +157,14 @@ body {
 	background-size: auto 100%;
 }
 
-html.splash body {
+html.splash {
+	background-color: #fff;
 	background: url(../img/bg_splash.jpg) no-repeat center center fixed;
+
+}
+
+html.splash body {
+	background: none;
 }
 
 body:before {
@@ -192,6 +198,10 @@ body > #page {
 	color: rgba(255, 255, 255, 0.85);
 	text-align: center;
 	font-size: 100%;
+}
+
+.main-splash {
+	height: 100%;	
 }
 
 .main {
@@ -252,7 +262,7 @@ body > #page {
     WIDE: CSS3 Effects
    ==================== */
   
-  
+  	
   
 
 /* ============
@@ -301,7 +311,8 @@ body > #page {
 	}
 	
     .wrapper {
-       
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
     }
 }
 
