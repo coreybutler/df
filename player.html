@@ -21,14 +21,31 @@
     
     <body>
     	
+    	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+    	
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
 		<div id="page" class="player-page">
 						
-			<header id="header_main" role="banner">
-				<h1 id="title"><a href="index2.html"><img src="img/bg_h1.png" alt="Dread Fascination - A Free-to-Listen Album by Graham Butler"></a></h1>
+			<header id="header_container" role="banner">
+				<section id="header_top">
+					<h1>Dread Fascination - A Free-to-Listen Album by Graham Butler</h1>
+        			<a id="link_home" href="index2.html">Dread Fascination Home</a>
+        			<!--<div class="fb-like" data-href="http://www.dreadfascination.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="true"></div>-->
+        		</section>
+        		<section id="header_bottom">
+					<div class="fb-like" data-href="http://www.dreadfascination.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="true"></div>
+        		</section>
         	</header>
 	    
             <div class="main">
@@ -45,7 +62,6 @@
             
             <section id="lyrics_pane">
 				<header id="lyrics_header"><h2>Lyrics</h2></header>
-				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.dreadfascination.com&amp;width=450&amp;height=65&amp;colorscheme=light&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;send=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:65px;" allowTransparency="true"></iframe>
             	<div id="lyrics_pane_inner">
             		<header>01  :  Calcine Love</header>
             		<div>
