@@ -17,6 +17,16 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
+        <script>
+        	(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+        
         <!--[if gte IE 9]>
   			<style type="text/css">
     			.gradient {
@@ -28,11 +38,15 @@
     </head>
     
     <body>
+    	
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
 		<div id="page" class="index-page">
+			
+			<div id="fb-root"></div>
+			<div class="fb-like" data-href="http://www.dreadfascination.com" data-width="450" data-layout="box_count" data-show-faces="false" data-send="true"></div>
 			
 			<header id="header_main" role="banner">
 				<h1 id="title"><a href="index2.html"><img src="img/bg_h1.png" alt="Dread Fascination - A Free-to-Listen Album by Graham Butler"></a></h1>
