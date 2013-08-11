@@ -28,7 +28,7 @@ body {
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #C73819;
     text-shadow: none;
 }
 
@@ -81,33 +81,18 @@ body {
    ============== */
 
 
+
 /* ==============
     MOBILE: Main
    ============== */
+  
 
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-}
 
 /* ===============
     ALL: IE Fixes
    =============== */
 
-.ie7 .title {
-    padding-top: 20px;
-}
+
 
 /* ==========================================================================
    Graham's custom styles
@@ -331,13 +316,6 @@ section#lyrics_pane #lyrics_pane_inner div p {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-  
-  	
-  
-
-/* ============
-    WIDE: Menu
-   ============ */
 
     
 
