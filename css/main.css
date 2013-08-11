@@ -197,20 +197,7 @@ body > #page {
 	background: -o-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* IE10+ */
 	background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* W3C */
-	/*padding: 0;
-	height: 100%;
-	position: fixed;
-	left: 29%;
-	top: 0;*/
 }
-  
-/*.index-page .main {
-	width: 71%;
-}
-
-.player-page .main {
-	width: 54%;
-}*/
 
 .main-module {
 	position: absolute;
