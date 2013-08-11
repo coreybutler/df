@@ -340,7 +340,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
    
 }
 
-@media only screen and (min-width: 1120px) {
+@media only screen {
 
 /* ===============
     Maximal Width
