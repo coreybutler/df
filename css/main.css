@@ -150,7 +150,8 @@ body > #page {
    ==================== */
 	
 	#header_container {
-		z-index:1;
+		z-index: 1;
+		color: #fff;
 	}
 	
     .main {
@@ -221,10 +222,6 @@ body > #page {
 		height: 100%;
 		float: left;
 		text-align: right;
-	}
-	
-	#header_container #header_top .fb-like {
-		
 	}
 	
 	.main {
@@ -325,6 +322,12 @@ body > #page {
 		position: relative;
 		background-position: center bottom;
 		background-size: 91% auto;
+	}
+	
+	#header_container #header_top aside#sharing {
+		width: 100%;
+		position: absolute;
+		top: 5%;
 		text-align: center;
 	}
 	
@@ -348,11 +351,6 @@ body > #page {
 		width: 100%;
 		height: 24%;
 		text-align: center;
-	}
-	
-	#header_container #header_top .fb-like {
-		float: none;
-		margin-top: 10%;
 	}
 	
 /********* MAIN *********/
