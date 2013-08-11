@@ -210,6 +210,14 @@ body > #page {
 	background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* W3C */
 }
 
+	.main {
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
+  	}
+
 .main-module {
 	position: absolute;
 	top: 50%;
@@ -321,13 +329,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
     INTERMEDIATE: IE Fixes
    ======================== */
   
-  .main {
-  		padding: 0;
-		height: 100%;
-		position: fixed;
-		left: 29%;
-		top: 0;
-  	}
+  
 
    
 
@@ -358,14 +360,6 @@ section#lyrics_pane #lyrics_pane_inner div p {
 /* ============
     WIDE: Main
    ============ */
-  
-  .main {
-  		padding: 0;
-		height: 100%;
-		position: fixed;
-		left: 29%;
-		top: 0;
-  	}
 
     .main article {
         float: left;
