@@ -68,35 +68,15 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px 'Source Sans Pro', Helvetica, Helvetica Neue, Arial;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-
-
-/* ==============
-    MOBILE: Main
-   ============== */
-  
-
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-
-
 /* ==========================================================================
    Graham's custom styles
    ========================================================================== */
+
+html.splash {
+	background-color: #fff;
+	background: url(../img/bg_splash.jpg) no-repeat center center fixed;
+
+}
 
 html, body {
 	height: 100%;
@@ -104,16 +84,11 @@ html, body {
 }
 
 body {
+    font: 16px/26px 'Source Sans Pro', Helvetica, Helvetica Neue, Arial;
 	background-image: url(../img/backgrounds/01_volcano.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: auto 100%;
-}
-
-html.splash {
-	background-color: #fff;
-	background: url(../img/bg_splash.jpg) no-repeat center center fixed;
-
 }
 
 html.splash body {
@@ -134,54 +109,6 @@ body > #page {
 	position: relative;
 }
 
-/*** HEADER ***/
-
-#header_container {
-	width: 29%;
-	height: 100%;
-	box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
-	position: fixed;
-	left: 0;
-	top: 0;
-}
-
-#header_container #header_top {
-	width: 100%;
-	height: 76%;
-	position: relative;
-	background-image: url(../img/bg_h1.png);
-	background-position: bottom left;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-
-#header_container #header_top h1 {
-	margin: 0;
-	padding: 0;
-	height: 0;
-	width: 0;
-	overflow: hidden;
-}
-
-#header_container #header_top a#link_home {
-	display: block;
-	width: 100%;
-	height: 0;
-	padding-top:35%;
-	position: absolute;
-	bottom: 0;
-	overflow: hidden;
-	color: transparent;
-	line-height: 0;
-	font-size: 0;
-}
-
-#header_container #header_bottom {
-	width: 100%;
-	height: 24%;
-	text-align: center;
-}
-
 
 /*** MAIN ***/
 
@@ -191,12 +118,7 @@ body > #page {
 
 .main {
 	background: #fff;
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 8%, rgba(255,255,255,1) 16%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.8)), color-stop(8%,rgba(255,255,255,0.92)), color-stop(16%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* IE10+ */
-	background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* W3C */
+	filter: none;
 }
 
 .main-module {
@@ -214,83 +136,6 @@ body > #page {
 	background: grey;
 	line-height: 120px;
 }
-
-/****** PLAYER ******/
-
-.main #player {
-	width: 100%;
-	height: 100%;	
-}
-
-
-section#lyrics_pane {
-	position: relative;
-	background-color: #fff;
-	width: 16%;
-	height: 100%;
-	padding-right: 1%;
-	position: fixed;
-	right: 0;
-	top: 0;
-	overflow: auto;
-}
-
-section#lyrics_pane header#lyrics_header {
-	position: fixed;
-	top: 0;
-	z-index: 9999;
-	width: 15%;
-	border-bottom: 1px solid #e5e5e5;
-	padding-left: 1%;
-	
-	-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
-    box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
-	
-	background-color: #fff;
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
-
-}
-
-section#lyrics_pane #lyrics_pane_inner {
-	position: absolute;
-	z-index: 999;
-	top: 66px;
-	padding: 1% 1% 5% 1%;
-	margin: 6%;
-}
-
-section#lyrics_pane #lyrics_pane_inner ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;	
-}
-
-section#lyrics_pane #lyrics_pane_inner a {
-	text-decoration: none;
-	color: #222;
-}
-
-section#lyrics_pane #lyrics_pane_inner header a span {
-	font-size: 0.8em;
-	vertical-align: top;
-}
-
-section#lyrics_pane #lyrics_pane_inner div {
-	padding-left: 10px;
-}
-
-section#lyrics_pane #lyrics_pane_inner div p {
-	font-size: 0.8em;
-	font-style: italic;
-	color: #a7a7a7;
-	line-height: 14px;
-}
-
 
 
 
@@ -329,17 +174,121 @@ section#lyrics_pane #lyrics_pane_inner div p {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
+  
+  	#header_container {
+		width: 100%;
+		height: 20%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
+	}
 
-    .main {
-  		
-  	}
-
-  	.index-page .main {
-		
+	#header_container #header_top {
+		width: 32%;
+		height: 100%;
+		position: static;
+		float: left;
+		background-image: url(../img/bg_h1.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	
-	.player-page .main {
+	#header_container #header_top h1 {
+		margin: 0;
+		padding: 0;
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	
+	#header_container #header_top a#link_home {
+		display: block;
+		width: 100%;
+		height: 100%;
+		color: transparent;
+		line-height: 0;
+		font-size: 0;
+	}
+	
+	#header_container #header_bottom {
+		width: 68%;
+		height: 100%;
+		float: left;
+		text-align: center;
+	}
+	
+	.main {
+  		padding: 0;
+		height: 80%;
+		position: fixed;
+		left: 0;
+		top: 20%;
+		width: 100%;
 		
+		background: -moz-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 30%, rgba(255,255,255,1) 60%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(30%,rgba(255,255,255,0.92)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* W3C */
+		
+  	}
+	
+	.main #player {
+		width: 68%;
+		height: 100%;
+		float: left;
+	}
+	
+/********* Lyrics Pane *********/
+
+	section#lyrics_pane {
+		position: relative;
+		float: left;
+		background-color: #fff;
+		width: 31%;
+		height: 100%;
+		padding-right: 1%;
+		overflow: auto;
+	}
+	
+	section#lyrics_pane header#lyrics_header {
+		position: fixed;
+		top: 20%;
+		z-index: 9999;
+		width: 29.5%;
+		border-bottom: 1px solid #e5e5e5;
+		padding-left: 1%;
+		
+		-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
+	    box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
+		
+		background-color: #fff;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
+		filter: none;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner {
+		position: absolute;
+		top: 66px;
+		padding: 1% 5% 5%;
+		margin: 0;
+		width: 90%;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner div p {
+		font-size: 0.85em;
+		font-style: italic;
+		color: #a7a7a7;
+		line-height: 14px;
+		padding-left: 6%;
 	}
 
 /* ============
@@ -354,21 +303,111 @@ section#lyrics_pane #lyrics_pane_inner div p {
 /* ===============
     Maximal Width
    =============== */
-  
-  	.main {
-  		padding: 0;
-		height: 100%;
-		position: fixed;
-		left: 29%;
-		top: 0;
-  	}
 
-	.index-page .main {
-		width: 71%;
+/********* HEADER *********/
+
+  	#header_container {
+		width: 32%;
+		height: 100%;
+	}
+
+	#header_container #header_top {
+		width: 100%;
+		height: 76%;
+		position: relative;
+		background-position: center bottom;
+		background-size: 91% auto;
 	}
 	
-	.player-page .main {
-		width: 54%;
+	#header_container #header_top h1 {
+		margin: 0;
+		padding: 0;
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	
+	#header_container #header_top a#link_home {
+		width: 100%;
+		height: 0;
+		padding-top: 35%;
+		position: absolute;
+		bottom: 0;
+	}
+	
+	#header_container #header_bottom {
+		width: 100%;
+		height: 24%;
+		text-align: center;
+	}
+	
+/********* MAIN *********/
+  
+  	.main {
+		height: 100%;
+		left: 32%;
+		top: 0;
+		width: 68%;
+		
+		background: -moz-linear-gradient(left,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 8%, rgba(255,255,255,1) 16%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.8)), color-stop(8%,rgba(255,255,255,0.92)), color-stop(16%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* W3C */
+			
+  	}
+
+
+/********* LYRICS PANE *********/
+	
+	section#lyrics_pane header#lyrics_header {
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+		width: 19.7%;
+		border-bottom: 1px solid #e5e5e5;
+		padding-left: 1%;
+		
+		-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
+	    box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
+		
+		background-color: #fff;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
+		filter: none;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;	
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner a {
+		text-decoration: none;
+		color: #222;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner header a span {
+		font-size: 0.8em;
+		vertical-align: top;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner div {
+		padding-left: 10px;
+	}
+	
+	section#lyrics_pane #lyrics_pane_inner div p {
+		font-size: 0.85em;
+		font-style: italic;
+		color: #a7a7a7;
+		line-height: 14px;
+		padding-left: 5%;
 	}
 	
 }
