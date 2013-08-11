@@ -171,7 +171,9 @@ body > #page {
 	position: absolute;
 	bottom: 0;
 	overflow: hidden;
-	vertical-align: top;
+	color: transparent;
+	line-height: 0;
+	font-size: 0;
 }
 
 #header_container #header_bottom {
@@ -346,8 +348,9 @@ section#lyrics_pane #lyrics_pane_inner div p {
    ==================== */
 
     .main {
-  		padding: 0;
+  		padding: 50% 0 0 0;
 		height: 100%;
+		background: red;
 		position: fixed;
 		left: 29%;
 		top: 0;
@@ -375,7 +378,6 @@ section#lyrics_pane #lyrics_pane_inner div p {
    =============== */
   
   	.main {
-  		padding: 50%;
   		padding: 0;
 		height: 100%;
 		position: fixed;
