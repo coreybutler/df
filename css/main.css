@@ -223,11 +223,8 @@ body > #page {
 		text-align: right;
 	}
 	
-	#header_container #header_bottom .fb-like {
-		position: absolute;
-		top: 50%;
-		right: 5%;
-		margin-top: -8px;
+	#header_container #header_top .fb-like {
+		
 	}
 	
 	.main {
@@ -328,6 +325,7 @@ body > #page {
 		position: relative;
 		background-position: center bottom;
 		background-size: 91% auto;
+		text-align: center;
 	}
 	
 	#header_container #header_top h1 {
@@ -352,11 +350,9 @@ body > #page {
 		text-align: center;
 	}
 	
-	#header_container #header_bottom .fb-like {
+	#header_container #header_top .fb-like {
 		float: none;
-		position: static;
-		top: 0;
-		right: 0;
+		margin-top: 10%;
 	}
 	
 /********* MAIN *********/
