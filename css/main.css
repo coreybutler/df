@@ -298,7 +298,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width:480px) {
+@media only screen and (min-width: 480px) {
 
 /* ====================
     INTERMEDIATE: Menu
@@ -314,7 +314,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
 
    
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
 
 /* ====================
     WIDE: CSS3 Effects
@@ -331,7 +331,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
    
 }
 
-@media only screen and (min-width:1139px) {
+@media only screen and (min-width: 1140px) {
 
 /* ===============
     Maximal Width
