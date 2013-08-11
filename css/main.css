@@ -343,13 +343,16 @@ body > #page {
 	}
 	
 	#header_container #header_bottom {
-		position: static;
-		top: 0;
-		right: 0;
-		float: none;
 		width: 100%;
 		height: 24%;
 		text-align: center;
+	}
+	
+	#header_container #header_bottom .fb-like {
+		float: none;
+		position: static;
+		top: 0;
+		right: 0;
 	}
 	
 /********* MAIN *********/
