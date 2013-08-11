@@ -375,6 +375,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
    =============== */
   
   	.main {
+  		padding: 50%;
   		padding: 0;
 		height: 100%;
 		position: fixed;
