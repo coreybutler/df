@@ -357,13 +357,13 @@ section#lyrics_pane #lyrics_pane_inner div p {
 		width: 54%;
 	}
 
+
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
   
   
-
-   
+}  
 
 @media only screen and (min-width: 768px) {
 
