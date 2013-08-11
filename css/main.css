@@ -187,9 +187,6 @@ body > #page {
 }
 
 .main {
-	
-	
-	
 	background: #fff;
 	background: -moz-linear-gradient(left,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 8%, rgba(255,255,255,1) 16%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.8)), color-stop(8%,rgba(255,255,255,0.92)), color-stop(16%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -304,7 +301,13 @@ section#lyrics_pane #lyrics_pane_inner div p {
     INTERMEDIATE: Menu
    ==================== */
 
-    
+    .main {
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
+  	}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -320,7 +323,13 @@ section#lyrics_pane #lyrics_pane_inner div p {
     WIDE: CSS3 Effects
    ==================== */
 
-    
+    .main {
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
+  	}
 
   
 
