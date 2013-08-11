@@ -310,30 +310,6 @@ section#lyrics_pane #lyrics_pane_inner div p {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-  
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-  
-  	.main {
-  		padding: 0;
-		height: 100%;
-		position: fixed;
-		left: 29%;
-		top: 0;
-  	}
-
-	.index-page .main {
-		width: 71%;
-	}
-	
-	.player-page .main {
-		width: 54%;
-	}
-	
-}
 
 @media only screen and (min-width: 480px) {
 
@@ -393,6 +369,30 @@ section#lyrics_pane #lyrics_pane_inner div p {
    ============ */
 
    
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+  
+  	.main {
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
+  	}
+
+	.index-page .main {
+		width: 71%;
+	}
+	
+	.player-page .main {
+		width: 54%;
+	}
+	
 }
 
 /* ==========================================================================
