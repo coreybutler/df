@@ -213,10 +213,17 @@ body > #page {
 	}
 	
 	#header_container #header_bottom {
-		width: 68%;
+		width: 63%;
 		height: 100%;
 		float: left;
-		text-align: center;
+		text-align: right;
+		padding-right: 5%;
+	}
+	
+	#header_container #header_bottom .fb-like {
+		position: absolute;
+		top: 50%;
+		margin-top: -8px;
 	}
 	
 	.main {
@@ -380,26 +387,6 @@ body > #page {
 		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
 		filter: none;
-	}
-	
-	section#lyrics_pane #lyrics_pane_inner ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;	
-	}
-	
-	section#lyrics_pane #lyrics_pane_inner a {
-		text-decoration: none;
-		color: #222;
-	}
-	
-	section#lyrics_pane #lyrics_pane_inner header a span {
-		font-size: 0.8em;
-		vertical-align: top;
-	}
-	
-	section#lyrics_pane #lyrics_pane_inner div {
-		padding-left: 10px;
 	}
 	
 	section#lyrics_pane #lyrics_pane_inner div p {
