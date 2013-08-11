@@ -171,6 +171,7 @@ body > #page {
 	position: absolute;
 	bottom: 0;
 	overflow: hidden;
+	vertical-align: top;
 }
 
 #header_container #header_bottom {
