@@ -148,7 +148,11 @@ body > #page {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
+	
+	#header_container {
+		z-index:1;
+	}
+	
     .main {
   		
   	}
