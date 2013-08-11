@@ -302,8 +302,20 @@ section#lyrics_pane #lyrics_pane_inner div p {
    ==================== */
 
     .main {
-  		
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
   	}
+  	
+  	.index-page .main {
+		width: 71%;
+	}
+	
+	.player-page .main {
+		width: 54%;
+	}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -320,10 +332,20 @@ section#lyrics_pane #lyrics_pane_inner div p {
    ==================== */
 
     .main {
-  		
+  		padding: 0;
+		height: 100%;
+		position: fixed;
+		left: 29%;
+		top: 0;
   	}
 
-  
+  	.index-page .main {
+		width: 71%;
+	}
+	
+	.player-page .main {
+		width: 54%;
+	}
 
 /* ============
     WIDE: Main
