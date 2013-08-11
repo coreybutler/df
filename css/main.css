@@ -339,14 +339,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
     
-    .title img {
-    	max-width: 100%;
-    	height: auto;
-    }
 
   
 
@@ -354,15 +347,7 @@ section#lyrics_pane #lyrics_pane_inner div p {
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
+   
 }
 
 @media only screen and (min-width:1140px) {
@@ -387,10 +372,6 @@ section#lyrics_pane #lyrics_pane_inner div p {
 		width: 54%;
 	}
 	
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
