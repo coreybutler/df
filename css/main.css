@@ -193,7 +193,11 @@ body > #page {
 	height: 24%;	
 }
 
+#header_container #header_bottom .fb-like {
+	margin-left: 35%;	
+}
 
+/*** MAIN ***/
 
 .main-splash {
 	height: 100%;	
