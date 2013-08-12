@@ -316,6 +316,7 @@ body > #page {
 	
 	.footer-container .legal {
 		color: #5c5c5c;
+		margin-left: 2%;
 	}
 	
 	
@@ -388,9 +389,15 @@ body > #page {
 		width: 100%;
 		height: 24%;
 		text-align: center;
+		position: absolute;
+		bottom: 0;
 	}
 	
 	#header_container #header_bottom .legal {
+		position: absolute;
+		bottom: 2%;
+		right: 0;
+		left: 0;
 		color: #363636;
 	}
 	
