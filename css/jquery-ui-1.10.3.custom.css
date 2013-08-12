@@ -90,13 +90,18 @@
 	display: block;
 	cursor: pointer;
 	position: relative;
-	margin-top: 2px;
+	margin-top: 1px;
 	padding: .5em .5em .5em .7em;
 	min-height: 0; /* support: IE7 */
 	border-top: 1px solid #e5e5e5;
+	-webkit-box-shadow: inset 1px 1px 13px 0px rgba(0, 0, 0, .08);
+	box-shadow: inset 1px 1px 13px 0px rgba(0, 0, 0, .08);
 }
 .ui-accordion #first_song {
 	border: none;
+}
+.ui-accordion .ui-accordion-header:hover {
+	color: #000;
 }
 .ui-accordion .ui-accordion-icons {
 	padding-left: 2.2em;
@@ -179,7 +184,7 @@
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	
+	font-weight: 600;
 }
 .ui-state-active a,
 .ui-state-active a:link,

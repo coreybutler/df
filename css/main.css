@@ -87,6 +87,7 @@ body {
     font: 16px/26px 'Source Sans Pro', Helvetica, Helvetica Neue, Arial;
 	background-image: url(../img/backgrounds/01_volcano.jpg);
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 html.splash body {
@@ -107,6 +108,48 @@ body > #page {
 	position: relative;
 }
 
+/********* HEADER *********/
+
+#header_container {
+	z-index: 1;
+	color: #fff;
+	display: block;
+	height: 200px;
+}
+
+#header_container #header_top {
+	width: 100%;
+	height: 200px;
+	position: static;
+	float: left;
+	background-image: url(../img/bg_h1.png);
+	background-repeat: no-repeat;
+	background-position: 10% center;
+	background-size: contain;
+}
+
+#header_container #header_top h1 {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	color: transparent;
+	line-height: 0;
+	font-size: 0;
+}
+
+#header_container #header_top a#link_home {
+	display: block;
+	height: 0;
+	padding-top: 80px;
+	overflow: hidden;
+}
+
+#header_container #header_bottom {
+	display: none;
+}
+
 
 /*** MAIN ***/
 
@@ -119,22 +162,75 @@ body > #page {
 	filter: none;
 }
 
+.main #player {
+	width: 100%;
+	height: 570px;
+	float: left;
+}
+
 .main-module {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	max-width: 500px;
-	margin: -60px 0 0 -170px;
-	text-align: center;
+	max-width: 65%;
+	margin: 6% auto 0;
+	text-align: justify;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .main-module a#button_listen_main {
+	position: relative;
 	display: block;
-	width: 340px;
-	background: grey;
-	line-height: 120px;
+	width: 190px;
+	padding: 10px 0;
+	color: #222;
+	text-decoration: none;
+	font-size: 1.3em;
+	
+	color: #222;
+	text-shadow: 1px 1px 1px #e5e5e5;	
+	
+	text-align: center;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	background: rgb(245,246,246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(237,238,244,1) 21%, rgba(203,206,219,1) 49%, rgba(227,229,232,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(237,238,244,1)), color-stop(49%,rgba(203,206,219,1)), color-stop(80%,rgba(227,229,232,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(237,238,244,1) 21%,rgba(203,206,219,1) 49%,rgba(227,229,232,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(237,238,244,1) 21%,rgba(203,206,219,1) 49%,rgba(227,229,232,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(237,238,244,1) 21%,rgba(203,206,219,1) 49%,rgba(227,229,232,1) 80%,rgba(245,246,246,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(237,238,244,1) 21%,rgba(203,206,219,1) 49%,rgba(227,229,232,1) 80%,rgba(245,246,246,1) 100%); /* W3C */
+	filter: none;
+	
+	-webkit-box-shadow:  0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+	box-shadow:  0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+	
 }
 
+.main-module a.icon-play:before {
+	padding: 0 20px 0 0;
+}
+
+.main-module a#button_listen_main:hover {
+	background: rgb(245,246,246); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C */
+
+}
+
+.main-module a#button_listen_main:active {
+	-webkit-box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
+	box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+section#lyrics_pane {
+	display: none;
+}
 
 
 /* ==========================================================================
@@ -147,10 +243,7 @@ body > #page {
     INTERMEDIATE: Menu
    ==================== */
 	
-	#header_container {
-		z-index: 1;
-		color: #fff;
-	}
+	
 	
     .main {
   		
@@ -189,7 +282,6 @@ body > #page {
 		position: fixed;
 		left: 0;
 		top: 0;
-		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
 	}
 
 	#header_container #header_top {
@@ -197,22 +289,11 @@ body > #page {
 		height: 100%;
 		position: static;
 		float: left;
-		background-image: url(../img/bg_h1.png);
-		background-position: left center;
-		background-repeat: no-repeat;
+		background-position: 10% center;
 		background-size: contain;
 	}
 	
-	#header_container #header_top h1 {
-		margin: 0;
-		padding: 0;
-		height: 0;
-		width: 0;
-		overflow: hidden;
-	}
-	
 	#header_container #header_top a#link_home {
-		display: block;
 		width: 100%;
 		height: 100%;
 		color: transparent;
@@ -227,17 +308,17 @@ body > #page {
 		margin-top: -35px;
 	}
 	
-	#header_container #header_bottom {
-		display: none;
-	}
-	
 	.main {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		overflow: auto;
   		padding: 0;
 		height: 70%;
 		position: fixed;
-		left: 0;
+		left: 5%;
 		top: 20%;
-		width: 100%;
+		width: 90%;
 		
 		background: -moz-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 30%, rgba(255,255,255,1) 60%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(30%,rgba(255,255,255,0.92)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -245,38 +326,36 @@ body > #page {
 		background: -o-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* IE10+ */
 		background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 30%,rgba(255,255,255,1) 60%); /* W3C */
+		filter: none;
 		
+		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5);
   	}
 	
 	.main #player {
 		width: 68%;
 		height: 100%;
-		float: left;
 	}
 	
 /********* Lyrics Pane *********/
 
 	section#lyrics_pane {
+		display: block;
 		position: relative;
 		float: left;
 		background-color: #fff;
 		width: 31%;
 		height: 100%;
 		padding-right: 1%;
-		overflow: auto;
+		overflow-y: auto;
 	}
 	
 	section#lyrics_pane header#lyrics_header {
 		position: fixed;
 		top: 20%;
 		z-index: 9999;
-		width: 29.5%;
-		border-bottom: 1px solid #e5e5e5;
+		width: 26.3%;
 		padding-left: 1%;
-		
-		-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
-	    box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
-	 			
+	 	border-bottom: 1px solid #e5e5e5;	
 		background-color: #fff;
 		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
@@ -289,8 +368,8 @@ body > #page {
 	
 	section#lyrics_pane #lyrics_pane_inner {
 		position: absolute;
-		top: 66px;
-		padding: 1% 0 5%;
+		top: 64px;
+		padding: 0 0 5%;
 		margin: 0;
 		width: 100%;
 	}
@@ -306,17 +385,16 @@ body > #page {
 /********* FOOTER *********/
 
 	.footer-container {
+		display: block;
 		position: fixed;
 		bottom: 0;
 		width: 100%;
 		height: 6.5%;
-		padding-top: 3.5%;
-		display: block;
+		text-align: center;
 	}
 	
 	.footer-container .legal {
-		color: #5c5c5c;
-		margin-left: 2%;
+		color: #363636;
 	}
 	
 	
@@ -345,6 +423,7 @@ body > #page {
 		width: 32%;
 		height: 100%;
 		text-shadow: 0px 1px 5px #000000;
+		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5) inset;
 	}
 
 	#header_container #header_top {
@@ -362,6 +441,12 @@ body > #page {
 		right: 0;
 		left: 0;
 		margin-top: 0;
+	}
+	
+	#header_container #header_top aside#sharing ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
 	
 	#header_container #header_top aside#sharing header {
@@ -422,11 +507,9 @@ body > #page {
 /********* LYRICS PANE *********/
 	
 	section#lyrics_pane header#lyrics_header {
-		position: fixed;
 		top: 0;
 		z-index: 9999;
 		width: 19.7%;
-		border-bottom: 1px solid #e5e5e5;
 		padding-left: 1%;
 		
 		-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
