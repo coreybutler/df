@@ -269,7 +269,7 @@ body > #page {
 		
 		-webkit-box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
 	    box-shadow:  1px 1px 13px 0px rgba(0, 0, 0, .08);
-		
+	 			
 		background-color: #fff;
 		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
@@ -283,9 +283,9 @@ body > #page {
 	section#lyrics_pane #lyrics_pane_inner {
 		position: absolute;
 		top: 66px;
-		padding: 1% 5% 5%;
+		padding: 1% 0 5%;
 		margin: 0;
-		width: 90%;
+		width: 100%;
 	}
 	
 	section#lyrics_pane #lyrics_pane_inner div p {
@@ -329,6 +329,11 @@ body > #page {
 		position: absolute;
 		top: 5%;
 		text-align: center;
+		text-shadow: 0px 1px 5px #000000;
+	}
+	
+	#header_container #header_top aside#sharing header span {
+		margin-bottom: 5px;
 	}
 	
 	#header_container #header_top h1 {
