@@ -119,7 +119,7 @@ body > #page {
 
 #header_container #header_top {
 	width: 100%;
-	height: 85%;
+	height: 131px;
 	position: static;
 	float: left;
 	background-image: url(../img/bg_h1.png);
@@ -164,7 +164,17 @@ body > #page {
 
 #header_container #header_top aside#sharing ul li {
 	float: left;
-	width: 50%;
+	padding: 0 1%;
+}
+
+#header_container #header_top aside#sharing ul li#social_fb {
+	width: 52%;
+	text-align: right;
+}
+
+#header_container #header_top aside#sharing ul li#social_twitter {
+	width: 44%;
+	text-align: left;
 }
 
 #header_container #header_bottom {
