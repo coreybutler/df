@@ -128,7 +128,7 @@ body > #page {
 	background-size: contain;
 }
 
-#header_container #header_top h1 {
+#header_container h1 {
 	margin: 0;
 	padding: 0;
 	height: 0;
@@ -142,7 +142,7 @@ body > #page {
 #header_container #header_top a#link_home {
 	display: block;
 	height: 0;
-	padding-top: 80px;
+	padding-top: 131px;
 	overflow: hidden;
 }
 
@@ -499,7 +499,7 @@ section#lyrics_pane header#lyrics_header {
 		margin-bottom: 5px;
 	}
 	
-	#header_container #header_top h1 {
+	#header_container h1 {
 		margin: 0;
 		padding: 0;
 		height: 0;
