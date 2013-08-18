@@ -174,9 +174,8 @@ body > #page {
 	width: 53%;
 	text-align: right;
 }
-
-#fb-like-container div.fb-like-box>span, 
-#fb-like-container div.fb-like-box>span>iframe{
+ 
+#fb-like-container div.fb-like-box>span>iframe #u_0_7 {
     width: 283px !important; 
 }
 
