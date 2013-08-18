@@ -84,7 +84,7 @@ html, body {
 }
 
 body {
-    font: 16px/26px 'Source Sans Pro', Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial;
 	background-image: url(../img/backgrounds/01_volcano.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -211,10 +211,14 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 
 .main-module {
 	max-width: 65%;
-	margin: 6% auto 0;
+	margin: 0 auto;
 	text-align: justify;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e5e5e5;
+}
+
+.main-module.welcome {
+	padding-top: 5%;
 }
 
 .main-module a#button_listen_main_1,
@@ -225,7 +229,8 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 	padding: 10px 0;
 	color: #222;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.3em;
+	font-weight: 600;
 	
 	color: #222;
 	text-shadow: 1px 1px 1px #e5e5e5;	
@@ -399,7 +404,7 @@ section#lyrics_pane header#lyrics_header {
   	.main-module a#button_listen_main_1,
   	.main-module a#button_listen_main_2 {
   		display: block;
-  		width: 190px;
+  		width: 215px;
 		font-size: 1.3em;
 	}
 	
@@ -440,10 +445,10 @@ section#lyrics_pane header#lyrics_header {
 	}
 	
 	section#lyrics_pane #lyrics_pane_inner div p {
-		font-size: 0.85em;
+		font-size: 0.8em;
 		font-style: italic;
 		color: #898989;
-		line-height: 14px;
+		line-height: 17px;
 		padding-left: 5%;
 	}
 	
