@@ -175,8 +175,10 @@ body > #page {
 	text-align: right;
 }
  
-#fb-like-container div#u_0_7 {
-    width: 283px !important; 
+.fb-like span {
+	overflow: visible !important;
+	width: 283px !important;
+	margin-right: -375px;
 }
 
 #header_container #header_top aside#sharing ul li#social_twitter {
