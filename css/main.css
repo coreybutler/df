@@ -217,10 +217,11 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.main-module a#button_listen_main {
+.main-module a#button_listen_main_1,
+.main-module a#button_listen_main_2 {
 	position: relative;
 	display: block;
-	width: 160px;
+	width: 100%;
 	padding: 10px 0;
 	color: #222;
 	text-decoration: none;
@@ -249,11 +250,16 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 	
 }
 
+.main-module a#button_listen_main_2 {
+	display: none;
+}
+
 .main-module a.icon-play:before {
 	padding: 0 20px 0 0;
 }
 
-.main-module a#button_listen_main:hover {
+.main-module a#button_listen_main_1:hover,
+.main-module a#button_listen_main_2:hover {
 	background: rgb(245,246,246); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
@@ -264,7 +270,8 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 
 }
 
-.main-module a#button_listen_main:active {
+.main-module a#button_listen_main_1:active,
+.main-module a#button_listen_main_2:active {
 	-webkit-box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
 	box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
 }
@@ -381,9 +388,15 @@ section#lyrics_pane header#lyrics_header {
 		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5);
   	}
   	
-  	.main-module a#button_listen_main {
+  	.main-module a#button_listen_main_1,
+  	.main-module a#button_listen_main_2 {
+  		display: block;
   		width: 190px;
 		font-size: 1.3em;
+	}
+	
+	.main-module a#button_listen_main_1 {
+		display: none;
 	}
 	
 	.main #player {
