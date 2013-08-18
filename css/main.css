@@ -174,12 +174,6 @@ body > #page {
 	width: 53%;
 	text-align: right;
 }
- 
-.fb-like span {
-	overflow: visible !important;
-	width: 283px !important;
-	margin-right: -375px;
-}
 
 #header_container #header_top aside#sharing ul li#social_twitter {
 	width: 43%;
