@@ -301,6 +301,14 @@ section#lyrics_pane header#lyrics_header {
 .footer-container .legal {
 		color: #8f8f8f;
 	}
+	
+.footer-container .legal a {
+	color: #4e4e4e;
+}
+
+.footer-container .legal a:hover {
+	color: #707070;
+}
 
 
 /* ==========================================================================
@@ -461,7 +469,13 @@ section#lyrics_pane header#lyrics_header {
 		color: #363636;
 	}
 	
-	
+	.footer-container .legal a {
+	color: #4e4e4e;
+	}
+
+	.footer-container .legal a:hover {
+	color: #707070;
+	}
 	
 /* ============
     WIDE: Main
@@ -548,6 +562,14 @@ section#lyrics_pane header#lyrics_header {
 		right: 0;
 		left: 0;
 		color: #363636;
+	}
+	
+	#header_container #header_bottom .legal a {
+	color: #4e4e4e;
+	}
+	
+	#header_container #header_bottom .legal a:hover {
+	color: #707070;
 	}
 	
 /********* MAIN *********/
