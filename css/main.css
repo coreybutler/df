@@ -160,7 +160,7 @@ body > #page {
 #header_container #header_top aside#sharing ul {
 	margin: 0 auto;
 	padding: 0;
-	overflow: auto;
+	overflow: visible;
 	text-align: center;
 	list-style: none;
 }
@@ -173,6 +173,10 @@ body > #page {
 #header_container #header_top aside#sharing ul li#social_fb {
 	width: 53%;
 	text-align: right;
+}
+
+#header_container #header_top aside#sharing ul li#social_fb ._56z- {
+	width: 283px !important;
 }
 
 #header_container #header_top aside#sharing ul li#social_twitter {
