@@ -168,12 +168,12 @@ body > #page {
 }
 
 #header_container #header_top aside#sharing ul li#social_fb {
-	width: 52%;
+	width: 53%;
 	text-align: right;
 }
 
 #header_container #header_top aside#sharing ul li#social_twitter {
-	width: 44%;
+	width: 43%;
 	text-align: left;
 }
 
@@ -290,6 +290,10 @@ section#lyrics_pane header#lyrics_header {
 .footer-container {
 		text-align: center;
 	}
+	
+.footer-container .legal {
+		color: #8f8f8f;
+	}
 
 
 /* ==========================================================================
@@ -305,6 +309,7 @@ section#lyrics_pane header#lyrics_header {
 	body > #page {
 		font-size: 1em;
 	}
+	
 
 
 /* ========================
@@ -343,7 +348,6 @@ section#lyrics_pane header#lyrics_header {
 	}
 	
 	#header_container #header_top a#link_home {
-		width: 40%;
 		height: 100%;
 		color: transparent;
 		line-height: 0;
