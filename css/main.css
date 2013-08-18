@@ -175,6 +175,10 @@ body > #page {
 	text-align: right;
 }
 
+iframe.fb_ltr {
+    width: 180px !important;
+}
+
 #header_container #header_top aside#sharing ul li#social_twitter {
 	width: 43%;
 	text-align: left;
