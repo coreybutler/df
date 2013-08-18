@@ -210,7 +210,7 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 }
 
 .main-module {
-	max-width: 65%;
+	max-width: 90%;
 	margin: 0 auto;
 	text-align: justify;
 	padding-bottom: 20px;
@@ -401,6 +401,10 @@ section#lyrics_pane header#lyrics_header {
 		width: 90%;
 		box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.5);
   	}
+  	
+  	.main-module {
+		max-width: 80%;
+	}
   	
   	.main-module a#button_listen_main_1,
   	.main-module a#button_listen_main_2 {
@@ -594,6 +598,10 @@ section#lyrics_pane header#lyrics_header {
 		background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.92) 8%,rgba(255,255,255,1) 16%); /* W3C */
 			
   	}
+  	
+  	.main-module {
+		max-width: 65%;
+	}
 
 
 /********* LYRICS PANE *********/
