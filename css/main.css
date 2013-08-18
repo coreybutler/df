@@ -175,11 +175,9 @@ body > #page {
 	text-align: right;
 }
 
-.fb-like-box iframe.fb_ltr {
-    width: 283px !important;
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 283px !important;
 }
-
-.fb-like-box iframe form#u_0_6 { width: 283px !important; }
 
 #header_container #header_top aside#sharing ul li#social_twitter {
 	width: 43%;
