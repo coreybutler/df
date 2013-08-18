@@ -190,7 +190,7 @@ body > #page {
 }
 
 .index-page .main {
-	padding: 20px 0;
+	padding: 15px 0;
 }
 
 .main {
@@ -216,10 +216,6 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 	text-align: justify;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #e5e5e5;
-}
-
-.main-module.welcome {
-	padding-top: 5%;
 }
 
 .main-module a#button_listen_main_1,
@@ -405,6 +401,10 @@ section#lyrics_pane header#lyrics_header {
   	
   	.main-module {
 		max-width: 80%;
+	}
+	
+	.main-module.welcome {
+		padding-top: 5%;
 	}
   	
   	.main-module a#button_listen_main_1,
