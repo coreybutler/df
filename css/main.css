@@ -150,8 +150,8 @@ body > #page {
 	width: 100%;
 	position: absolute;
 	top: 131px;
-	left: 0;
-	right: 0;
+	left: auto;
+	right: auto;
 }
 
 #header_container #header_top aside#sharing ul {
@@ -356,10 +356,11 @@ section#lyrics_pane header#lyrics_header {
 	}
 	
 	#header_container #header_top aside#sharing {
-		position: absolute;
 		top: 50%;
-		right: 10%;
-		margin-top: -35px;
+		left: auto;
+		right: 3%;
+		margin-top: -10px;
+		width: 32%;
 	}
 	
 	.index-page .main {
