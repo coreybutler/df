@@ -192,7 +192,7 @@ body > #page {
 }
 
 .index-page .main {
-	padding: 15px 0;
+	padding: 2% 0;
 }
 
 .main {
@@ -278,6 +278,41 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 .main-module a#button_listen_main_2:active {
 	-webkit-box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
 	box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-module.bios {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	border: none;
+}
+
+.main-module.bios .bio-pic {
+	display: block;
+	height: 75px;
+	width: 75px;
+	float: left;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	background-size: 75px 75px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin: 8px 20px 10px 10px;
+}
+
+/*.main-module.bios .bio-pic:before {
+	border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 67px 67px 67px 67px;
+    content: "";
+    display: block;
+    height: 67px;
+    width: 67px;
+    margin: 2px 0 0 2px;
+}*/
+
+.main-module.bios #gb {
+	background-image: url(../img/gb-promo-small.jpg);
+	
 }
 
 section#lyrics_pane {
@@ -383,17 +418,13 @@ section#lyrics_pane header#lyrics_header {
 		width: 32%;
 	}
 	
-	.index-page .main {
-		padding: 0;
-	}
-	
 	.main {
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
 		overflow: auto;
   		padding: 0;
-		height: 70%;
+		height: 62%;
 		position: fixed;
 		left: 5%;
 		top: 20%;
@@ -403,6 +434,7 @@ section#lyrics_pane header#lyrics_header {
   	
   	.main-module {
 		max-width: 80%;
+		overflow: auto;
 	}
 	
 	.main-module.welcome {
@@ -586,12 +618,16 @@ section#lyrics_pane header#lyrics_header {
 	}
 	
 /********* MAIN *********/
-  
+	
   	.main {
 		height: 100%;
 		left: 32%;
 		top: 0;
 		width: 68%;
+		
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
 		
 		background: -moz-linear-gradient(left,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.92) 8%, rgba(255,255,255,1) 16%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.8)), color-stop(8%,rgba(255,255,255,0.92)), color-stop(16%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -603,7 +639,7 @@ section#lyrics_pane header#lyrics_header {
   	}
   	
   	.main-module {
-		max-width: 65%;
+		max-width: 62%;
 	}
 
 
