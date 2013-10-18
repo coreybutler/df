@@ -455,7 +455,11 @@ section#lyrics_pane header#lyrics_header {
 	
 	.main #player {
 		width: 68%;
-		height: 100%;
+		height: 95%;
+	}
+	
+	.main #top_pane {
+		height: 5%;
 	}
 	
 /********* Lyrics Pane *********/
@@ -466,7 +470,7 @@ section#lyrics_pane header#lyrics_header {
 		float: left;
 		background-color: #fff;
 		width: 31%;
-		height: 100%;
+		height: 95%;
 		padding-right: 1%;
 		overflow-y: auto;
 	}
