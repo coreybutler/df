@@ -207,6 +207,12 @@ body > #page {
 	float: left;
 }
 
+.main #top_pane {
+		font-size: 0.8em;
+		padding-left: 1%;
+		background-color: #fff;
+	}
+
 
 iframe .g-highlighted, iframe .g-highlighted:hover {
 	background-color: #696969 !important;
@@ -435,10 +441,6 @@ section#lyrics_pane header#lyrics_header {
 		max-width: 80%;
 		overflow: auto;
 	}
-	
-	.main-module.welcome {
-		padding-top: 5%;
-	}
   	
   	.main-module a#button_listen_main_1,
   	.main-module a#button_listen_main_2 {
@@ -639,6 +641,19 @@ section#lyrics_pane header#lyrics_header {
   	
   	.main-module {
 		max-width: 62%;
+	}
+	
+	.main-module.welcome {
+		padding-top: 5%;
+	}
+	
+	.main #player {
+		width: 68%;
+		height: 97%;
+	}
+	
+	.main #top_pane {
+		height: 3%;
 	}
 
 
