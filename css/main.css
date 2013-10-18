@@ -327,7 +327,7 @@ section#lyrics_pane {
 section#lyrics_pane header#lyrics_header {
 		z-index: 9999;
 		padding-left: 1%;
-	 	border-bottom: 1px solid #e5e5e5;	
+	 	/*border-bottom: 1px solid #e5e5e5;*/
 		background-color: #fff;
 		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
