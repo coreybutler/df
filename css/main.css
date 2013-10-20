@@ -226,6 +226,10 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+.main-module a {
+	color: #0E8C82;
+}
+
 .main-module a#button_listen_main_1,
 .main-module a#button_listen_main_2 {
 	position: relative;
