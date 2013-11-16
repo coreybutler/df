@@ -205,6 +205,7 @@ body > #page {
 }
 
 #header_container #header_top aside#buy li#get_cd a {
+	background: rgb(246,246,246);
 	background: linear-gradient(to bottom, #F5F6F6 0%, #EDEEF4 21%, #CBCEDB 49%, #E3E5E8 80%, #F5F6F6 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #DDDDDD;
     border-radius: 2px 2px 2px 2px;
@@ -335,7 +336,8 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 }
 
 .main-module a#button_listen_main_1:active,
-.main-module a#button_listen_main_2:active {
+.main-module a#button_listen_main_2:active,
+#header_container #header_top aside#buy li#get_cd a:active {
 	-webkit-box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
 	box-shadow:  0px -1px 0px 0px rgba(0, 0, 0, 0.25);
 }
