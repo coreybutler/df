@@ -187,14 +187,29 @@ body > #page {
 	display: none;
 }
 
-#header_container #header_top aside#buy a {
+#header_container #header_top aside#buy ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#header_container #header_top aside#buy ul li {
+	text-align: center;
+	margin: 0 0 15px 0;
+	overflow: auto;
+}
+
+#header_container #header_top aside#buy li a {
+	display: block;
+    filter: none;
+}
+
+#header_container #header_top aside#buy li#get_cd a {
 	background: linear-gradient(to bottom, #F5F6F6 0%, #EDEEF4 21%, #CBCEDB 49%, #E3E5E8 80%, #F5F6F6 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #DDDDDD;
     border-radius: 2px 2px 2px 2px;
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.25);
     color: #222222;
-    display: block;
-    filter: none;
     font-size: 1em;
     font-weight: 600;
     padding: 0px 5px;
@@ -308,7 +323,7 @@ iframe .g-highlighted, iframe .g-highlighted:hover {
 
 .main-module a#button_listen_main_1:hover,
 .main-module a#button_listen_main_2:hover,
-#header_container #header_top aside#buy a:hover {
+#header_container #header_top aside#buy li#get_cd a:hover {
 	background: rgb(245,246,246); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
@@ -364,22 +379,37 @@ section#lyrics_pane {
 }
 
 section#lyrics_pane header#lyrics_header {
-		z-index: 9999;
-		padding-left: 1%;
-	 	/*border-bottom: 1px solid #e5e5e5;*/
-		background-color: #fff;
-		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
-		filter: none;
-	}
+	z-index: 9999;
+	padding-left: 1%;
+ 	/*border-bottom: 1px solid #e5e5e5;*/
+	background-color: #fff;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 20%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 20%,rgba(255,255,255,0.7) 100%); /* W3C */
+	filter: none;
+}
+
+section#lyrics_pane #lyrics_pane_inner header {
+	overflow: auto;
+}
+
+section#lyrics_pane #lyrics_pane_inner header .song-title {
+	min-width: 58%;
+}
+
+section#lyrics_pane #lyrics_pane_inner header .itunes-single {
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	margin-top: -7px;
+}
 
 .footer-container {
-		text-align: center;
-	}
+	text-align: center;
+}
 	
 .footer-container .legal {
 		color: #8f8f8f;
@@ -454,7 +484,7 @@ section#lyrics_pane header#lyrics_header {
 	}
 	
 	#header_container #header_top aside#sharing {
-		top: 50%;
+		top: 30%;
 		right: 3%;
 		margin-top: -10px;
 		left: auto;
@@ -463,8 +493,21 @@ section#lyrics_pane header#lyrics_header {
 	
 	#header_container #header_top aside#buy {
 		display: block;
-		top: 70%;
+		top: 50%;
 		right: 5%;
+	}
+	
+	#header_container #header_top aside#buy ul li {
+		float: left;
+		overflow: auto;
+	}
+	
+	#header_container #header_top aside#buy ul li:first-child {
+		margin-right: 10px;
+	}
+	
+	#header_container #header_top aside#buy li#get_cd {
+		padding-top: 6px;
 	}
 	
 	.main {
@@ -634,10 +677,13 @@ section#lyrics_pane header#lyrics_header {
 		right: auto;
 		left: 50%;
 		margin-left: -112px;
-		border: 4px solid rgba(255, 255, 255, 0.4);
 	}
 	
-	#header_container #header_top aside#buy a {
+	#header_container #header_top aside#buy ul li {
+		float: none;
+	}
+	
+	#header_container #header_top aside#buy li#get_cd a {
 		font-size: 1.2em;
 		padding: 8px 60px;
 	}
