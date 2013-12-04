@@ -174,12 +174,12 @@ body > #page {
 }
 
 #header_container #header_top aside#sharing ul li#social_fb {
-	width: 53%;
+	/*width: 53%;*/
 	text-align: right;
 }
 
 #header_container #header_top aside#sharing ul li#social_twitter {
-	width: 43%;
+	/*width: 43%;*/
 	text-align: left;
 }
 
@@ -662,12 +662,18 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 		right: 0;
 		left: 0;
 		margin-top: 0;
+		height: 14%;
+		position: relative;
+		left: -50%;
 	}
 	
 	#header_container #header_top aside#sharing ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		width: 100%;
+		position: absolute;
+		left: 50%;
 	}
 	
 	#header_container #header_top aside#sharing header {
