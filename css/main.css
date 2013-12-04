@@ -181,6 +181,7 @@ body > #page {
 #header_container #header_top aside#sharing ul li#social_twitter {
 	/*width: 43%;*/
 	text-align: left;
+	width: 85px;
 }
 
 #header_container #header_top aside#buy {
