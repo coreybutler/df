@@ -733,11 +733,12 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 	
 /********* MAIN *********/
 	
-  	.main {
+  	.index-page .main {
 		height: 100%;
 		left: 32%;
 		top: 0;
 		width: 68%;
+		padding: 0;
 		
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
