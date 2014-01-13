@@ -455,15 +455,11 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-<<<<<<< HEAD
-
-
-
 
 /* ============
     WIDE: Menu
    ============ */
-
+/*
     .title {
         float: left;
     }
@@ -472,8 +468,7 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
     	max-width: 100%;
     	height: auto;
     }
-=======
-	
+*/	
 	body > #page {
 		height: auto;
 		min-height: 100%;
@@ -486,7 +481,6 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 		left: 0;
 		top: 0;
 	}
->>>>>>> 0b8796c95b7abf87f94ff4b1a422c36c8ea87a72
 
 	#header_container #header_top {
 		width: 100%;
@@ -809,14 +803,9 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 	.footer-container {
 		display: none;
 	}
-<<<<<<< HEAD
-
     .wrapper {
 
     }
-=======
-	
->>>>>>> 0b8796c95b7abf87f94ff4b1a422c36c8ea87a72
 }
 
 /* ==========================================================================
