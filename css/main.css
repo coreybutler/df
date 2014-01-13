@@ -10,7 +10,7 @@ textarea {
     color: #222;
 }
 
-html {
+html { 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -455,20 +455,7 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
-
-/* ============
-    WIDE: Menu
-   ============ */
-/*
-    .title {
-        float: left;
-    }
-
-    .title img {
-    	max-width: 100%;
-    	height: auto;
-    }
-*/	
+	
 	body > #page {
 		height: auto;
 		min-height: 100%;
@@ -803,9 +790,7 @@ section#lyrics_pane #lyrics_pane_inner header .itunes-single {
 	.footer-container {
 		display: none;
 	}
-    .wrapper {
-
-    }
+	
 }
 
 /* ==========================================================================
