@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if lt IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dread Fascination</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+    </head>
+    
+    <body>
+    	
+    	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+    	
+        <!--[if lte IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div id="page" class="player-page">
+						
+			<header id="header_container" role="banner">
+				<h1>Dread Fascination - A Free-to-Listen Album by Graham Butler</h1>
+				<section id="header_top">
+        			<a id="link_home" href="index.html">Dread Fascination Home</a>
+					<aside id="sharing">
+						<ul>
+							<li id="social_fb"><div class="fb-like" data-href="http://www.dreadfascination.com" data-width="283" data-layout="button_count" data-show-faces="false" data-send="true"></div></li>
+							<li id="social_twitter">
+								<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							</li>
+							<li id="social_follow">
+								<a href="https://twitter.com/dfband" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @dfband</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+							</li>
+						</ul>
+						<!--<ul>
+							<li><a href="https://itunes.apple.com/us/album/stars-die-delerium-years-1991/id428008116?uo=4" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(http://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a></li>
+							<li></li>
+						</ul>-->
+					</aside>
+					<aside id="buy">
+						<ul>
+							<li id="get_cd"><a href="http://www.cdbaby.com/cd/grahambutler" target="_blank">Get the CD</a></li>
+							<li id="itunes"><a href="https://itunes.apple.com/us/album/dread-fascination/id744948642?uo=4" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.png) no-repeat;width:110px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_itunes-lrg.svg);}"></a></li>
+						</ul>
+					</aside>
+        		</section>
+        		<section id="header_bottom">
+        			<span class="legal">Copyright &copy; 2013 <a href="http://www.grahambutler.com" target="_blank">Graham Butler Music</a>. All rights reserved.</span>
+        		</section>
+        	</header>
+
+			<div class="main">
+            	
+            	<!-- <nav id="player_mainControls">
+            		<a href="#" class="player-control-button icon-play"> Play All</a>
+            		<a href="#" class="player-control-button icon-pause"></a>
+            		<a href="#" class="player-control-button icon-stop"></a>
+            	</nav> -->
+            	
+            	<section id="player_container">
+            		<div id="top_pane">
+            			Make sure volume is set to a reasonable level before playing. <span style="text-align: right;"><a href="http://www.cdbaby.com/cd/grahambutler" target="_blank" style="color: #0E8C82;">Get the CD</a></span>
+            		</div>
+            		<iframe id="player" scrolling="no" frameborder="no" allowtransparency="yes" src="https://w.soundcloud.com/player/?auto_play=false&color=3E5B55&sharing=true&show_artwork=false&download=false&buying=false&url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F8330875%3Fsecret_token%3Ds-2TmlO"></iframe>
+            	</section>
+            	
+	            <section id="lyrics_pane">
+					<header id="lyrics_header"><h2>Lyrics</h2></header>
+	            	<div id="lyrics_pane_inner">
+	            		<header id="first_song">
+	            			<div class="song-title">01  :  Calcine Love</div>
+							<a class="itunes-single" href="https://itunes.apple.com/us/album/calcine-love/id744948642?i=744949909&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Piano, Synths, Bass, Guitars, Drums, Programming<br/>
+								<strong>Bill Franco</strong> - Lead Guitar
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>Instrumental</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">02  :  Dread Fascination</div>
+							<a class="itunes-single" href="https://itunes.apple.com/us/album/dread-fascination/id744948642?i=744949910&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Guitars, Bass, Synths, Programming, backing vocals<br/>
+								<strong>Bill Franco</strong> - Solos, additional guitars<br/>
+								<strong>Kevin Pollack</strong> - Vocals<br/>
+								<strong>Sarah Breidenbach</strong> - Backing Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+								no one ever thought it would be you<br/>
+								to give in, to surrender<br/>
+								nothing left for you to hold on to<br/>
+								this is not like you
+							</p>
+							<p>
+								others will be watching what you do<br/>
+								vigilants and keepers<br/>
+								have all of your choices made for you<br/>
+								you're not the one I knew
+							</p>
+							<p>
+								---
+							</p>
+							<p>
+								run through fire to run from pain<br/>
+								this life is only fiction, it's not too late<br/>
+								the day's not over, there is something more for you
+							</p>
+							<p>
+								---
+							</p>
+							<p>
+								tonight I'm drifting off into blank space<br/>
+								with visions in my head<br/>
+								hovering inside a foreign place<br/>
+								then I hear the sound
+							</p>
+							<p>
+								senses disappear without a trace<br/>
+								darkness swallows light<br/>
+								I don't even recognize your face<br/>
+								I cannot stop you
+							</p>
+							<p>
+								---
+							</p>
+							<p>
+								run for cover, deny your doubt<br/>
+								this life is just a prison, there's no way out<br/>
+								the night is falling, there is nothing more for you<br/>
+							</p>
+							<p>
+								---
+							</p>
+							<p>
+								I lie awake at night, in reverie<br/>
+								a deep contemplation<br/>
+								find my peace in light, this fantasy<br/>
+								this dread fascination
+							</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">03  :  Air Conceals pt. 1</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/air-conceals-pt.-1/id744948642?i=744949911&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Lead and Rhythm Guitars, Bass, Synths, Programming, backing vocals<br/>
+								<strong>Kevin Pollack</strong> - Lead Vocals, backing vocals<br/>
+								<strong>Jeroen Hendrix</strong> - Additional keyboards
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+								under camouflage I wait<br/>
+								for silence<br/>
+								to face the torrid light of day<br/>
+								shutter falls
+							</p>
+							<p>	
+								and what the air conceals inside<br/>
+								is broken<br/>
+								And when the day and night collide<br/>
+								I...
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								wonder what to say, and where to go<br/>
+								to find my perfect space<br/>
+								and what I should have done to make it show<br/>
+								to know...
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								that there's a color in my eyes<br/>
+								that's fading<br/>
+								and in the fever of the night<br/>
+								anguish comes
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								wonder when I lost my way?<br/>
+								virus spreading every day
+							</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">04  :  Testify</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/testify/id744948642?i=744949912&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Guitars, Bass, Synths, Programming, backing vocals<br/>
+								<strong>Bill Franco</strong> - Additional guitars<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+								Fall asleep<br/>
+								on my shoulder<br/>
+								And as you breathe<br/>
+								promise me again
+							</p>
+							<p>		
+								For a while it seems<br/>
+								We can watch it all unfold<br/>
+								And when this moment expires<br/>
+								promise me again
+							</p>
+							<p>
+								---
+							</p>
+							<p>		
+								ooh promise me<br/>
+								ooh don't disagree<br/>
+								ooh I will believe<br/>
+								ooh testify for me
+							</p>
+							<p>
+								---
+							</p>
+							<p>		
+								I read your letter<br/>
+								and locked my door<br/>
+								To trap the silence<br/>
+								promise me again
+							</p>
+							<p>		
+								So stay awhile with me<br/>
+								don't cut the line<br/>
+								and I will lie for you<br/>
+								promise me again
+							</p>
+							<p>
+								---
+							</p>
+							<p>		
+								I can't wait for the days you come<br/>
+								and take it all away
+							</p>
+							<p>		
+								I can't take it the days you're gone<br/>
+								tell me you're here to stay
+							</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">05  :  My Disguise</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/my-disguise/id744948642?i=744949913&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Programming, Lead and Rhythm Guitars, Bass, Synths, Backing Vocals<br/>
+								<strong>Bill Franco</strong> - Guitar Solo<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	                			glimpsing all the signs as he rises<br/>
+								the air is stale, this room seems bigger than before
+							</p>
+							<p>
+								he caught a glance, a tiny motion<br/>
+								sighing relief, she slipped out the door
+							</p>
+							<p>	
+								the creeping morning light reveals<br/>
+								the other car in the drive is not there anymore
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								and all the words that come to my mind<br/>
+								won't make up for time
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								the fog of twilight only deceiving<br/>
+								the clock's relentless rhythm repeating in his head
+							</p>
+							<p>	
+								silhouettes darken the casement<br/>
+								and mark the hours that lay collecting by the bed
+							</p>
+							<p>	
+								the figures pass, abducting the daylight<br/>
+								under the falling sun the cycle starts again
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								I want to hide away<br/>
+								and forget all the reasons<br/>
+								all the crimes and the breaches
+							</p>
+							<p>	
+								and my disguise prevailing<br/>
+								all your love and your mercy<br/>
+								never knew where to find me
+							</p>
+							<p>	
+								and I'll deny I need you<br/>
+								never care for another<br/>
+								I retreat under cover
+							</p>
+							<p>
+								---
+							</p>
+							<p>	
+								and though I may not seem to mind<br/>
+								I can't make up for time
+							</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">06  :  Sleep Forever</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/sleep-forever/id744948642?i=744949914&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Lead and Rhythm Guitars, Bass, Programming, Synths, Backing Vocals<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	            				my eyes, they burn<br/>
+								with calcine love
+							</p>
+							<p>
+								I'll never stir<br/>
+								while I'm under
+							</p>
+							<p>	
+								the air conceals<br/>
+								a tear within
+							</p>
+							<p>	
+								I need to feel<br/>
+								her porcelain skin
+							</p>
+							<p>	
+								this night is cold<br/>
+								without her glow
+							</p>
+							<p>	
+								can ease my soul<br/>
+								with lead and smoke
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								I... won't live on the run<br/>
+								it has to be done
+							</p>
+							<p>	
+								no... it just isn't fair<br/>
+								why don't you care?
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								I can't exist<br/>
+								in lethargy
+							</p>
+							<p>	
+								they're watching you<br/>
+								if you could see
+							</p>
+							<p>	
+								the time has come<br/>
+								to know your fears
+							</p>
+							<p>	
+								I'll make it right<br/>
+								and disappear
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								there's no one to fight me<br/>
+								but I will tread lightly<br/>
+								all I know is what you told me to
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								I won't live on the run<br/>
+								it has to be done
+							</p>
+							<p>	
+								no, it just isn't fair<br/>
+								why don't you care?
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								lay me down to sleep until daylight comes<br/>
+								lay me down forever still 
+							</p> 
+	            		</div>
+	            		<header>
+	            			<div class="song-title">07  :  Flicker</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/flicker/id744948642?i=744949915&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Programming, Guitars, Bass, Synths<br/>
+								<strong>Kevin Pollack</strong> - Vocals<br/>
+								<strong>Bill Franco</strong> - Guitar Solo
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	            				gliding drops on silver thread<br/>
+								silent feed, pictures in my head
+							</p>
+							<p>	
+								I speak a word, watch it fall,<br/>
+								crushing synapses all
+							</p>
+							<p>	
+								spark relights and you're inside<br/>
+								gathering fibers left untied
+							</p>
+							<p>	
+								relapse, a moment in time,<br/>
+								figure fades, melts away
+							</p>
+							<p>	
+								luminous, a memory<br/>
+								lead impelled, puncturing the skin
+							</p>
+							<p>	
+								a shapeless face, in shifting lights,<br/> 
+								shadows live, fears collide
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								I can't fight this anymore<br/>
+								but I'm not gonna run away<br/>
+								(help me remember)
+							</p>
+							<p>	
+								come into oblivion<br/>
+								turn the blackest night into day<br/>
+								(show me a flicker)
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								voiceless words, in calm unrest<br/>
+								waters burn, fires effervesce
+							</p>
+							<p>	
+								a sentiment, in caustic light<br/>
+								crumbling as the pain ignites
+							</p>
+							<p>	
+								single hue, amid the black<br/>
+								ebon air gently doubles back
+							</p>
+							<p>	
+								I hear your voice, a melody<br/>
+								haunting line, a remedy
+							</p>
+							<p>	
+								severed cord, hanging near<br/>
+								tendril rise, dying cells cohere
+							</p>
+							<p>	
+								electric shock, a call to rise<br/>
+								impulse comes, a reason why
+							</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">08  :  Air Conceals pt. 2</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/air-conceals-pt.-2/id744948642?i=744949916&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Synths/Programming
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>Instrumental</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">09  :  Closer</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/closer/id744948642?i=744949917&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Percussion, Programming, keyboards, background vocals<br/>
+								<strong>John Hegner</strong>- Piano<br/>
+								<strong>Brandon Covelli</strong> - Additional Keyboards<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	            				If I look closer<br/>
+								I can almost see your face<br/>
+								Beneath the surface
+							</p>
+							<p>	
+								I know I should have seen the signs<br/>
+								Nothing can make me change my mind
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								If you let go now<br/>
+								No contentment left for me<br/>
+								But I'll keep talking
+							</p>
+							<p>	
+								Maybe you'll come to understand<br/>
+								Nothing can compromise the plan
+	            			</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">10  :  Faith Alone</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/faith-alone/id744948642?i=744949918&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Guitars, Bass, Synths, Programming, Backing Vocals<br/>
+								<strong>Bill Franco</strong> - Guitar Solo<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	            				there is someone here<br/>
+								is it me? I fear
+							</p>
+							<p>
+								I can see no past<br/>
+								in the mirror glass
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								blackout in my head<br/>
+								lingering regret
+							</p>
+							<p>	
+								all that I can feel<br/>
+								waking life too real
+							</p>
+							<p>	
+								body, mind erase<br/>
+								final resting place
+							</p>
+							<p>	
+								idle days away<br/>
+								silent as the grave<br/>
+								we abide by faith alone
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								there's another life<br/>
+								in a ray of light
+							</p>
+							<p>	
+								I can feel it near<br/>
+								ringing in my ear
+							</p>
+							<p>	
+								---
+							</p>
+							<p>	
+								feeling faceless in my regret, but<br/>
+								there's a reason to forget
+							</p>
+							<p>	
+								I never knew myself this way<br/>
+								but with or without you I'm here to stay
+	            			</p>
+	            		</div>
+	            		<header>
+	            			<div class="song-title">11 : Paradise</div>
+	            			<a class="itunes-single" href="https://itunes.apple.com/us/album/paradise/id744948642?i=744949919&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.png) no-repeat;width:45px;height:15px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets//images/web/linkmaker/badge_itunes-sm.svg);}"></a>
+	            		</header>
+	            		<div>
+	            			<p class="credits">
+	            				<strong>Graham Butler</strong> - Drums, Percussion, Guitars, Bass, Synths, Programming, Backing Vocals<br/>
+								<strong>Peter Calo</strong> - Guitars<br/>
+								<strong>Kevin Pollack</strong> - Vocals
+	            			</p>
+	            			<p>
+								---
+							</p>
+	            			<p>
+	            				Tell another lie to me<br/>
+								Until I cannot disagree
+							</p>
+							<p>	
+								Stir the clouds above my head<br/>
+								to grey as all my colors bled, yeah
+							</p>
+							<p>
+								tempt me not to toe the line<br/>
+								to see my purpose redefined
+							</p>
+							<p>		
+								clear the ash and dust to find<br/>
+								a long-awaited paradise<br/>
+								with you
+							</p>
+							<p>		
+								---
+							</p>
+							<p>		
+								I can wait, I can wait<br/>
+								Because another day without you<br/>
+								is another chance to rise again
+							</p>
+							<p>		
+								---
+							</p>
+							<p>		
+								As the ashes turn to glass<br/>
+								and camoflauge my secret past
+							</p>
+							<p>		
+								Every stone that falls to earth<br/>
+								to time commit my every word, yeah
+							</p>
+							<p>		
+								feeling light wash over me<br/>
+								An ending I can almost see
+							</p>
+							<p>		
+								Hearing saints and angels pray<br/>
+								that I must wait to cross the gates<br/>
+								to a long-awaited paradise
+								with you
+							</p>
+							<p>		
+								---
+							</p>
+							<p>		
+								on a rainy day in my paradise<br/>
+								sun is shining all around me
+							</p>
+							<p>		
+								if I wish for just one more life to live<br/>
+								may it come true,  and
+							</p>
+							<p>		
+								---
+							</p>
+							<p>		
+								I can wait, I can wait<br/>
+								just one more day without you
+							</p>
+							<p>		
+								I can wait, I can wait<br/>
+								Because another day without you<br/>
+								is another chance to rise again
+							</p>
+							<p>		
+								---
+							</p>
+							<p>		
+								Rise above the edge to find<br/>
+								a long-awaited paradise<br/>
+								with you
+							</p>
+	            		</div>
+	            	</div>
+	            </section> <!-- END Lyrics Pane -->
+            
+            </div> <!-- #main -->
+
+        	<div class="footer-container">
+                <span class="legal">Dread Fascination &copy; 2013 <a href="http://www.grahambutler.com" target="_blank">Graham Butler Music</a>. All rights reserved.</span>
+        	</div>
+        
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/accordion.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-36384378-3'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
